@@ -1,5 +1,3 @@
-import * as ReactDOM from 'react-dom'; 
-
 function NavBar() {
     return (
         <nav>
@@ -13,6 +11,8 @@ function NavBar() {
     );
 }
 
-const container = document.getElementById("root");
-const root = ReactDOM.createRoot(container);
-root.render(<NavBar/>);
+export default function MyPage() {
+    return (
+        <NavBar/>
+    );
+}
