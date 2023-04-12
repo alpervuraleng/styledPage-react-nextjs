@@ -1,0 +1,16 @@
+.nav {
+    display: flex;
+}
+
+.navItems {
+    list-style: none;
+    display: flex;
+    justify-content: right;
+    margin-right: 0px;
+    margin-left: auto;
+}
+
+.navItem {
+    margin-right: 20px;
+    font-size: 20px;
+}

@@ -1,22 +1,39 @@
 import styles from '../styles/globals.css';
+import customStyles from '../styles/customStyles.module.css';
 
-const image = 
-<img 
-    src={'reacticon.png'}
-    width={50}
-    height={50}
-/>
+function MyNav() { 
+    return (
+        <nav className={customStyles.nav}>
+            <img 
+                src={'reacticon.png'}
+                width={50}
+                height={50}
+            />
+            <ul className={customStyles.navItems}>
+                <li className={customStyles.navItem}>Pricing</li>
+                <li className={customStyles.navItem}>About</li>
+                <li className={customStyles.navItem}>Contact</li>
+            </ul>
+        </nav>
+    ); 
+}
 
-function MyContent() {
-    return (<div>
-        {image}
-        <h1>Fun Facts About React</h1>
-        <ul>
-            <li>First released</li>
-            <li>Originally created</li>
-            <li>Is Maintained</li>
-        </ul>    
-    </div>);    
+function MyContent() { 
+    return (
+        <>
+            <header>
+                <MyNav></MyNav>
+            </header>
+            <h1>I like React because</h1>
+            <ol>
+                <li>Very popular</li>
+                <li>Easy to learn</li>
+            </ol> 
+            <footer>
+                © 2023 Vural development. All rights reserved.
+            </footer>
+        </>   
+    ); 
 }
 
 export default function MyPage() {
