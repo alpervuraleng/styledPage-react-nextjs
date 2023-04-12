@@ -1,22 +1,6 @@
 import styles from '../styles/globals.css';
 import customStyles from '../styles/customStyles.module.css';
-
-function MyNav() { 
-    return (
-        <nav className={customStyles.nav}>
-            <img 
-                src={'reacticon.png'}
-                width={50}
-                height={50}
-            />
-            <ul className={customStyles.navItems}>
-                <li className={customStyles.navItem}>Pricing</li>
-                <li className={customStyles.navItem}>About</li>
-                <li className={customStyles.navItem}>Contact</li>
-            </ul>
-        </nav>
-    ); 
-}
+import MyNav from './myNav.jsx';
 
 function MyContent() { 
     return (
@@ -29,7 +13,7 @@ function MyContent() {
                 <li>Very popular</li>
                 <li>Easy to learn</li>
             </ol> 
-            <footer>
+            <footer className={customStyles.footer}>
                 © 2023 Vural development. All rights reserved.
             </footer>
         </>   
